@@ -15,7 +15,7 @@ class Stone{
         push();
         translate(this.body.position.x, this.body.position.y);
         imageMode(CENTER);
-        image(this.image, 0, 0, this.diametre);
+        image(this.image, 0, 0, this.diametre,this.diametre);
         pop();
       }
 }

@@ -4,7 +4,7 @@ class Throw{
             bodyA: bodyA,
             pointB: pointB,
             stiffness: 0.01,
-            length: 10
+            length: 50
         }
         this.pointB=pointB;
         this.throw = Constraint.create(options);
@@ -20,7 +20,8 @@ class Throw{
     }
 
     display(){
-       
+     fill("black")  
+     line(this.throw.bodyA.position.x,this.throw.bodyA.position.y,pointB.x,pointB.y)
     }
     
 }
